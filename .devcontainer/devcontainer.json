@@ -1,0 +1,10 @@
+{
+    "name": "hello-devops-fejlesztoi-kornyezet",
+    "build": {
+        "dockerfile": "Dockerfile.dev",
+        "context": ".."
+    },
+    "forwardPorts": [8080],
+    "postCreateCommand": "pip install -r requirements.txt"
+}
+C:\Devops\hello-devops\.devcontainer\devcontainer.json

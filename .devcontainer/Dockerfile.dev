@@ -1,0 +1,14 @@
+# Fejlesztoi Python alap image
+FROM python:3.11-slim
+
+# Mappahoz letrehozasa
+WORKDIR /app
+
+# Flask futtatasahoz szukseges port
+EXPOSE 8080
+
+# Bash, git es egyeb szukseges eszkozok telepitese
+RUN apt-get update && apt-get install -y bash git && apt-get clean
+
+# A projekt masolasa (a devcontainer.json context ".." miatt a teljes projektrol tud)
+COPY . /app
