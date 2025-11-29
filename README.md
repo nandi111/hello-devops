@@ -1,6 +1,7 @@
 # Hello DevOps
 
 Egyszerű Flask alapú "Hello DevOps" alkalmazás, amely HTTP-n elérhető a http://localhost:8080 címen.
+Új feature a http://localhost:8080/info címen.
 
 ## Előkészületek
 
